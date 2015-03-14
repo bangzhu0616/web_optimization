@@ -1,3 +1,5 @@
+/* minimize this file and inline it to html file */
+
 /** {
   outline: 1px solid red !important;
 }*/
@@ -29,10 +31,15 @@ form {
   font-weight: 800;
 }
 
+/* added backface-visibility: hidden */
+/* use CSS3 TranslateX */
 .mover {
   position: fixed;
   width: 256px;
   z-index: -1;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transform: translate3d(0,0,0);
 }
 
 .randomPizzaContainer {
